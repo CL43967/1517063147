@@ -1,0 +1,19 @@
+＃！/ usr / bin / python
+＃ -  *  - 编码：UTF-8  -  *  -
+
+班 学生：
+   '所有员工的基类'
+   empCount =  0
+ 
+   def  __init__（self，name，stu_no，class_no，gender）：
+      self .name = name
+      self .stu_no = stu_no
+      self .class_no = class_no
+      自我 .gender =性别
+      Employee.empCount + =  1
+   
+   def  displayCount（self）：
+     打印 “员工总数％d ” ％ Employee.empCount
+ 
+   def  displayEmployee（self）：
+      打印 “姓名：”，自我 .name和   “Stu_no： ”，自 .stu_no，“Class_no： ”，自 .class_no， “性别：”，自 .gender
