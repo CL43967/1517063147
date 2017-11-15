@@ -1,0 +1,16 @@
+＃！/ usr / bin / python
+导入重新
+ 
+行=  “猫比狗聪明” ;
+ 
+matchObj = re.match（[R '狗'，线，re.M被|如re.I）
+如果 matchObj：
+   打印 “ match  - > matchObj.group（）：”，matchObj.group（）
+其他：
+   打印 “不匹配!! ”
+ 
+matchObj = re.search（[R '狗'，线，re.M被|如re.I）
+如果 matchObj：
+   打印 “ search  - > matchObj.group（）：”，matchObj.group（）
+其他：
+   打印 “不匹配!! ”
