@@ -1,0 +1,21 @@
+导入 smtplib
+导入 email.mime.multipart
+导入 email.mime.text
+
+msg = email.mime.multipart.MIMEMultipart（）
+MSG [ '从' ] =  ' qq552010694@163.com '
+MSG [ '到' ] =  ' 1791876860@qq.com '
+msg [ ' subject ' ] =  ' test '
+内容=  ''' ''
+    你好，
+            这是一封自动发送的邮件。
+“””
+txt = email.mime.text.MIMEText（content）
+msg.attach（TXT）
+
+smtp = smtplib
+smtp = smtplib.SMTP（）
+smtp.connect（' smtp.163.com '，' 25 '）
+smtp.login（' qq552010694@163.com '，' qwe1230 '）
+smtp.sendmail（' qq552010694@163.com '，' 1791876860@qq.com '，STR（MSG））
+smtp.quit（
